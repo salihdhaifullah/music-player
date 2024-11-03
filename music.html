@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="index.css" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="player">
+    <h2>Music Player</h2>
+    
+    <button onclick="addFiles()">Add Audio Files</button>
+    
+    <ul id="fileList"></ul>
+    
+    <audio id="audio" controls loop></audio>
+
+    <div class="controls">
+        <button id="playPause" onclick="togglePlay()">Play</button>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" onchange="changeVolume(this.value)">
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
