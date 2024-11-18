@@ -129,3 +129,8 @@ function togglePlay() {
 function changeVolume(value) {
     audio.volume = value;
 }
+
+
+document.addEventListener('keyup', event => {
+    if (event.code === 'Space') togglePlay();
+})
